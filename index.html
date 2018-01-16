@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curso Html-05 Beginners Node Studio</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000;
+        }
+        
+        th,
+        td {
+            padding: 7px;
+        }
+        
+        .Nome {
+            background-color: red;
+        }
+        
+        .E-mail {
+            background-color: green;
+        }
+        
+        .Telefone {
+            background-color: blue;
+        }
+        
+        .Cargo {
+            background-color: yellow;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -13,9 +43,57 @@
 
     <h1>Ola Mundo Seja Bem Vindos ao Curso Beginner Node Studio</h1>
 
-    <h2>Trabalhando Com Links Html-05</h2>
+    <h2>Trabalhando Com Tabelas Html-05</h2>
 
-    <a href="https://www.nodestudio.com.br" target="_blank">Link-Externos</a>
+    <table>
+        <caption>Tabelas de Clientes</caption>
+
+        <colgroup>
+            <col class="Nome">
+            <col class="E-mail">
+            <col class="Telefone">
+            <col class="Cargo">
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Cargo</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Cleiton</td>
+                <td>webmars@gmail.com</td>
+                <td>xxx-xxx-xxx</td>
+                <td rowspan="2">Desenvolvedor-Web</td>
+            </tr>
+
+            <tr>
+                <td>Fabio</td>
+                <td>fabiocba@gmail.com</td>
+                <td>xxx-xxx-xxx</td>
+
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Total:2</td>
+            </tr>
+
+        </tfoot>
+
+
+    </table>
+
+
+
 
 </body>
 
