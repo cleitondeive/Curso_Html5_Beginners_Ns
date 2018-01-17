@@ -8,7 +8,11 @@
     <title>Curso Html-05 Beginners Node Studio</title>
 
     <style>
-
+        mark {
+            background-color: rgb(248, 226, 23);
+            color: #000;
+            ;
+        }
     </style>
 
 </head>
@@ -18,115 +22,18 @@
 
     <h1>Ola Mundo Seja Bem Vindos ao Curso Beginner Node Studio</h1>
 
-    <h2>Trabalhando Com Formularios Html-05</h2>
+    <h2>Mark e Contenteditable</h2>
 
     <hr>
-    <form action="cadastro.php" method="post">
-        <fieldset>
-            <legend>Informações Pessoais</legend>
 
-            Nome:<br>
-            <input type="text" name="nome" required autofocus> <br> Email:
+    <div contenteditable>
 
-            <br>
+        <h1>Mark e Contenteditable</h1>
+        <p contenteditable="false"><mark> ipsum dolor sit amet consectetur adipisicing elit.</mark> Laudantium harum similique nobis laboriosam provident recusandae porro totam possimus, obcaecati nemo, exercitationem corrupti, id explicabo commodi at numquam. Voluptates, eaque
+            alias.
+        </p>
 
-            <input type="email" name="email" id="email" required autocomplete="off" placeholder="Digite Seu Email"> <br> Senha:
-
-            <br>
-
-            <input type="password" name="senha" maxlength="8"><br><br>
-
-            <h3>Escolha seu Time de Coração:</h3>
-            <input type="radio" name="time" value="vasco"> Vasco <br>
-            <input type="radio" name="time" value="Palmeiras" checked> Palmeiras <br>
-            <input type="radio" name="time" value="Cuiabá"> Cuiabá <br>
-
-            <h3>Escolha sua Cor de Coração</h3>
-            <input type="checkbox" name="cores" value="verde" checked>Verde <br>
-            <input type="checkbox" name="cores" value="Azul">Azul<br>
-            <input type="checkbox" name="cores" value="Amarelo">Amarelo <br>
-
-            <h3>Escolha sua Quantidade:</h3>
-            <input type="number" name="quantidade" min="0" max="100" step="10"><br>
-
-            <h3>Escolha uma Faixa de Rangers:</h3>
-            <input type="range" name="qtd" min="1" max="10"> <br>
-
-            <h3>Escolha uma Cor na Caixa Box:</h3>
-            <input type="color" name="corbox"><br>
-
-            <h3>Escolha uma Imagem:</h3>
-
-            <input type="file" name="imagem"><br>
-
-
-            <input type="submit" name="btn_enviar" value="Enviar"> <br>
-
-            <h3>Search Procurar:</h3>
-            <input type="search" name="pesquisa"><br>
-
-            <h3>Telefone:</h3>
-            <input type="tel" name="telefone"><br>
-
-
-            <h3>Data:</h3>
-            <input type="date" name="data"><br>
-
-
-
-            <h3>Hora:</h3>
-            <input type="time" name="hora"><br>
-
-
-
-            <h3>Mês e Ano:</h3>
-            <input type="month" name="mes-ano"><br>
-
-
-            <h3>Semana:</h3>
-            <input type="week" name="semana"><br>
-
-
-            <h3>Data-Hora:</h3>
-            <input type="datetime-local" name="datelocal"><br>
-
-            <h3>Mensagem:</h3>
-            <textarea name="textarea" id="" cols="30" rows="10" spellcheck=""></textarea><br>
-            <button type="button">Clique Para Enviar</button>
-            <h3>Escolha seu Veiculo:</h3>
-            <h3>Select, Optgroup:</h3>
-            <select name="Veiculos" id="">
-
-                <optgroup label="Carros">
-            
-    <option value="camaro">Camaro</option>
-    <option value="sandero">Sandero</option>
-    <option value="Gol">Gol</option>
-    <option value="Corola">Corola</option>
-</optgroup>
-
- <optgroup label="Motos">
-    <option value="Honda-Biz" selected>Biz</option>
-    <option value="Yamaha-ybr">Ybr</option>
-</optgroup>
-</select>
-
-            <h3>Trabalhando com Datalist</h3>
-
-            <input name="cursos" list="lista-cursos">
-            <datalist id="lista-cursos">
-                <option value="html5">
-                <option value="Css-03">
-                <option value="Materialize">
-
-
-            </datalist>
-
-
-        </fieldset>
-
-
-    </form>
+    </div>
 
 
 
